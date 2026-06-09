@@ -196,15 +196,7 @@ with st.sidebar:
         "💼  Business Recommendation",
     ], label_visibility="collapsed")
     st.divider()
-    n_ok = sum(ok(k) for k in ["lgbm_only","xgb_tuned","lr_only","results"])
-    if n_ok==4:
-        st.markdown('<div style="color:#4ade80;font-size:12px;font-weight:600">✅ All models loaded</div>',
-                    unsafe_allow_html=True)
-    else:
-        st.markdown(f'<div style="color:#fbbf24;font-size:12px">⚠️ {n_ok}/4 model files found</div>',
-                    unsafe_allow_html=True)
-    st.markdown('<div style="font-size:11px;color:#4a7ab5;margin-top:8px">Best: LightGBM BTC Only<br>Accuracy: <b style="color:#4ade80">90.40%</b></div>',
-                unsafe_allow_html=True)
+    
 
 # ══════════════════════════════════════════════════════════════
 # HOME
